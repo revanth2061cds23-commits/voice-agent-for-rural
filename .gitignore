@@ -1,0 +1,26 @@
+# Secrets
+.env
+system1/firebase-key.json
+**/firebase-key.json
+
+# Local IDE / agent tooling
+.claude/
+agent/.claude/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# JS
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log

@@ -1,0 +1,6 @@
+livekit-agents
+livekit-plugins-sarvam
+livekit-plugins-turn-detector
+livekit-plugins-openai
+python-dotenv
+httpx

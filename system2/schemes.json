@@ -1,0 +1,277 @@
+[
+  {
+    "scheme_id": "PM_KISAN_001",
+    "name": "PM-KISAN Samman Nidhi",
+    "name_hindi": "पीएम-किसान सम्मान निधि",
+    "category": "agriculture",
+    "benefit": "₹6,000 per year income support to eligible farmer families",
+    "eligibility": {
+      "occupation": ["farmer"],
+      "income_max": null,
+      "land_min_acres": 0.1,
+      "has_pucca_house": null,
+      "has_lpg_connection": null,
+      "has_daughter_below_10": null,
+      "bpl_required": null
+    },
+    "required_documents": ["aadhaar", "bank_account", "land_record"],
+    "application_form": {
+      "fields": [
+        "citizen_id",
+        "full_name",
+        "aadhaar_number",
+        "bank_account_number",
+        "bank_ifsc",
+        "land_record_number",
+        "land_acres",
+        "mobile_number",
+        "village",
+        "district"
+      ]
+    },
+    "rita_explanation_hindi": "अगर आप किसान हैं और आपके पास कम से कम 0.1 एकड़ जमीन है, तो पीएम-किसान में आपको सालाना ₹6,000 तीन किश्तों में मिलते हैं। आवेदन के लिए आधार, बैंक खाता और जमीन का रिकॉर्ड जरूरी है।"
+  },
+  {
+    "scheme_id": "AYUSHMAN_001",
+    "name": "Ayushman Bharat (PM-JAY)",
+    "name_hindi": "आयुष्मान भारत (पीएम-जय)",
+    "category": "health",
+    "benefit": "Health insurance cover up to ₹5 lakh per family per year",
+    "eligibility": {
+      "occupation": ["any"],
+      "income_max": 500000,
+      "land_min_acres": null,
+      "has_pucca_house": null,
+      "has_lpg_connection": null,
+      "has_daughter_below_10": null,
+      "bpl_required": true
+    },
+    "required_documents": ["aadhaar", "bank_account"],
+    "application_form": {
+      "fields": [
+        "citizen_id",
+        "full_name",
+        "aadhaar_number",
+        "mobile_number",
+        "address",
+        "district",
+        "bpl_card_number (if applicable)"
+      ]
+    },
+    "rita_explanation_hindi": "आयुष्मान भारत में पात्र परिवार को सालाना ₹5 लाख तक का इलाज का कवर मिलता है। अगर आपकी सालाना आय ₹5 लाख तक है या आपके पास बीपीएल कार्ड है, तो आप पात्र हो सकते हैं। आधार और बैंक विवरण चाहिए।"
+  },
+  {
+    "scheme_id": "AWAS_001",
+    "name": "Pradhan Mantri Awas Yojana (PMAY-G)",
+    "name_hindi": "प्रधानमंत्री आवास योजना (ग्रामीण)",
+    "category": "housing",
+    "benefit": "Financial assistance for building a pucca house",
+    "eligibility": {
+      "occupation": ["any"],
+      "income_max": 300000,
+      "land_min_acres": null,
+      "has_pucca_house": false,
+      "has_lpg_connection": null,
+      "has_daughter_below_10": null,
+      "bpl_required": null
+    },
+    "required_documents": ["aadhaar", "bank_account"],
+    "application_form": {
+      "fields": [
+        "citizen_id",
+        "full_name",
+        "aadhaar_number",
+        "bank_account_number",
+        "bank_ifsc",
+        "current_house_type (kutcha/pucca)",
+        "income_annual",
+        "village",
+        "district"
+      ]
+    },
+    "rita_explanation_hindi": "अगर आपके पास पक्का घर नहीं है और आपकी सालाना आय ₹3 लाख तक है, तो पीएम आवास योजना में घर बनाने के लिए सहायता मिल सकती है। आधार और बैंक विवरण जरूरी हैं।"
+  },
+  {
+    "scheme_id": "SUKANYA_001",
+    "name": "Sukanya Samriddhi Yojana",
+    "name_hindi": "सुकन्या समृद्धि योजना",
+    "category": "women_child",
+    "benefit": "Savings scheme for a girl child with attractive interest and tax benefits",
+    "eligibility": {
+      "occupation": ["any"],
+      "income_max": null,
+      "land_min_acres": null,
+      "has_pucca_house": null,
+      "has_lpg_connection": null,
+      "has_daughter_below_10": true,
+      "bpl_required": null
+    },
+    "required_documents": ["aadhaar", "bank_account"],
+    "application_form": {
+      "fields": [
+        "citizen_id",
+        "parent_name",
+        "parent_aadhaar_number",
+        "girl_child_name",
+        "girl_child_age",
+        "bank_account_number",
+        "bank_ifsc",
+        "mobile_number",
+        "village",
+        "district"
+      ]
+    },
+    "rita_explanation_hindi": "अगर आपके घर में 10 साल से कम उम्र की बेटी है, तो सुकन्या समृद्धि योजना में बेटी के भविष्य के लिए बचत खाता खोला जा सकता है। आधार और बैंक विवरण जरूरी हैं।"
+  },
+  {
+    "scheme_id": "UJJWALA_001",
+    "name": "Pradhan Mantri Ujjwala Yojana",
+    "name_hindi": "प्रधानमंत्री उज्ज्वला योजना",
+    "category": "energy",
+    "benefit": "Free LPG connection support for eligible households",
+    "eligibility": {
+      "occupation": ["any"],
+      "income_max": 200000,
+      "land_min_acres": null,
+      "has_pucca_house": null,
+      "has_lpg_connection": false,
+      "has_daughter_below_10": null,
+      "bpl_required": true
+    },
+    "required_documents": ["aadhaar"],
+    "application_form": {
+      "fields": [
+        "citizen_id",
+        "full_name",
+        "aadhaar_number",
+        "mobile_number",
+        "address",
+        "district",
+        "bpl_card_number (if applicable)"
+      ]
+    },
+    "rita_explanation_hindi": "अगर आपके घर में एलपीजी कनेक्शन नहीं है और आपकी सालाना आय ₹2 लाख तक है या आपके पास बीपीएल कार्ड है, तो उज्ज्वला योजना के तहत गैस कनेक्शन में मदद मिल सकती है। आधार जरूरी है।"
+  },
+  {
+    "scheme_id": "MGNREGA_001",
+    "name": "MGNREGA",
+    "name_hindi": "मनरेगा",
+    "category": "employment",
+    "benefit": "Guaranteed wage employment up to 100 days per year",
+    "eligibility": {
+      "occupation": ["farmer", "labourer", "agricultural_labourer"],
+      "income_max": null,
+      "land_min_acres": null,
+      "has_pucca_house": null,
+      "has_lpg_connection": null,
+      "has_daughter_below_10": null,
+      "bpl_required": null
+    },
+    "required_documents": ["aadhaar", "bank_account"],
+    "application_form": {
+      "fields": [
+        "citizen_id",
+        "full_name",
+        "aadhaar_number",
+        "bank_account_number",
+        "bank_ifsc",
+        "mobile_number",
+        "village",
+        "district"
+      ]
+    },
+    "rita_explanation_hindi": "मनरेगा में ग्रामीण परिवार को साल में 100 दिन तक रोजगार का अधिकार मिलता है। किसान/मजदूर/कृषि मजदूर पात्र हो सकते हैं। आधार और बैंक विवरण जरूरी हैं।"
+  },
+  {
+    "scheme_id": "MUDRA_001",
+    "name": "Pradhan Mantri Mudra Yojana",
+    "name_hindi": "प्रधानमंत्री मुद्रा योजना",
+    "category": "business",
+    "benefit": "Collateral-free loans for micro/small businesses",
+    "eligibility": {
+      "occupation": ["small_business"],
+      "income_max": null,
+      "land_min_acres": null,
+      "has_pucca_house": null,
+      "has_lpg_connection": null,
+      "has_daughter_below_10": null,
+      "bpl_required": null
+    },
+    "required_documents": ["aadhaar", "bank_account"],
+    "application_form": {
+      "fields": [
+        "citizen_id",
+        "full_name",
+        "aadhaar_number",
+        "bank_account_number",
+        "bank_ifsc",
+        "business_name",
+        "business_type",
+        "loan_amount_requested",
+        "mobile_number",
+        "district"
+      ]
+    },
+    "rita_explanation_hindi": "अगर आप छोटा व्यवसाय करते हैं, तो मुद्रा योजना में बिना गारंटी के लोन मिल सकता है। आवेदन के लिए आधार और बैंक विवरण जरूरी हैं।"
+  },
+  {
+    "scheme_id": "ASHIRWAD_001",
+    "name": "Punjab Ashirwad Scheme (Daughter Marriage Assistance)",
+    "name_hindi": "पंजाब आशीर्वाद योजना (बेटी विवाह सहायता)",
+    "category": "women_child",
+    "benefit": "Financial assistance for daughter's marriage (as per scheme norms)",
+    "eligibility": {
+      "occupation": ["any"],
+      "income_max": null,
+      "land_min_acres": null,
+      "has_pucca_house": null,
+      "has_lpg_connection": null,
+      "has_daughter_below_10": null,
+      "bpl_required": null
+    },
+    "required_documents": ["aadhaar", "bank_account"],
+    "application_form": {
+      "fields": [
+        "citizen_id",
+        "applicant_name",
+        "aadhaar_number",
+        "bank_account_number",
+        "bank_ifsc",
+        "daughter_name",
+        "daughter_age",
+        "proposed_marriage_date",
+        "village",
+        "district"
+      ]
+    },
+    "rita_explanation_hindi": "पंजाब आशीर्वाद योजना में बेटी के विवाह के लिए आर्थिक सहायता मिल सकती है। आमतौर पर आवेदन के लिए आधार और बैंक विवरण की जरूरत होती है।"
+  },
+  {
+    "scheme_id": "ATTADAL_001",
+    "name": "Atta Dal Scheme (Punjab)",
+    "name_hindi": "आटा दाल योजना (पंजाब)",
+    "category": "food_security",
+    "benefit": "Subsidized atta and dal for eligible households",
+    "eligibility": {
+      "occupation": ["any"],
+      "income_max": 150000,
+      "land_min_acres": null,
+      "has_pucca_house": null,
+      "has_lpg_connection": null,
+      "has_daughter_below_10": null,
+      "bpl_required": true
+    },
+    "required_documents": ["ration_card"],
+    "application_form": {
+      "fields": [
+        "citizen_id",
+        "full_name",
+        "ration_card_number",
+        "mobile_number",
+        "village",
+        "district"
+      ]
+    },
+    "rita_explanation_hindi": "आटा दाल योजना में पात्र परिवार को रियायती दर पर आटा और दाल मिल सकती है। अगर आपके पास बीपीएल कार्ड है या आपकी आय ₹1.5 लाख तक है, तो आप पात्र हो सकते हैं। राशन कार्ड जरूरी है।"
+  }
+]
