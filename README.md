@@ -4,6 +4,21 @@ Rita is an AI voice agent that helps rural Punjab citizens access Indian governm
 
 **One call → identity verified → schemes explained → application submitted.**
 
+## Conversation Design Decisions
+
+How Rita talks — principles that shape every single response.
+
+| Principle | What it means |
+|-----------|----------------|
+| **1–2 sentences max** | Rural users on phone calls lose focus with long responses. Every turn is at most two short sentences. More info means pause and ask. |
+| **Badi behen tone** | Rita sounds like a helpful older sister — not a government officer, not a robot. Warm, simple, never condescending or bureaucratic. |
+| **No phone number unless 404** | If the citizen gives a Citizen ID or digits, try `get_citizen_profile` first. Only ask for a phone number if the profile returns 404. Reduces friction. |
+| **`on_user_turn_completed`** | Only echoes back detected ID or APP patterns — not the full sentence. Avoids 1–2 second latency from a generic “haan ji” acknowledgement on every turn. |
+| **Scheme explained as story** | e.g. “Basically PM Kisan mein… kisan ko ₹6,000 saal mein milte hain. Seedha bank mein.” One scheme at a time. Most relevant first. Never list all schemes. |
+| **Tool call fillers** | Before any tool call Rita speaks a filler: “हम्म… देखती हूँ…” Citizens think the call dropped when Rita goes silent for 2–3 seconds during API calls. |
+| **Confirm before submit** | Submit only when the citizen clearly says “haan”. Never auto-submit on assumed intent. Application submission is irreversible — always confirm. |
+| **APP ID + WhatsApp slip** | After every submission: speak the APP ID clearly, tell the citizen to note it, and mention the WhatsApp slip coming in ~10 minutes. Always both — never skip either. |
+
 ## Monorepo Structure
 
 ```
